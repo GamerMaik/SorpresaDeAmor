@@ -1,0 +1,182 @@
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+    
+.login{
+    position: relative;
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(15px);
+    border: 1px solid #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 25px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0 25px 50px rgba(255, 255, 255, 0.1) ;
+}
+
+.login h2{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 600;
+    color: var(--text_Login_Color);
+    margin-bottom: 10px;
+}
+.login .inputBox{
+    position: relative;
+}
+.login .inputBox input{
+    position: relative;
+    width: 100%;
+    padding: 15px 20px;
+    outline: none;
+    font-size: 1.25em;
+    color: var(--text_Login_Color);
+    border-radius: 5px;
+    background: var(--white_Color);
+    border: none;
+    margin-bottom: 0.85px;
+}
+.login .inputBox .date{
+    display: flex;
+    gap: 15px;
+    justify-content: space-around;
+}
+
+.login .inputBox ::placeholder{
+    color: var(--text_Login_Color);
+}
+
+.login .inputBox #btn{
+    position: relative;
+    border: none;
+    outline: none;
+    background: var(--text_Login_Color);
+    color: var(--white_Color);
+    cursor: pointer;
+    font-size: 1.25em;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.login .inputBox #btn:hover{
+    background: #ac0b00;
+}
+
+.login .group{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+}
+.login p{
+    font-size: 1.25em;
+    color:#8f2c24;
+    font-weight: 500;
+}
+.heart{
+    max-width: 50px;
+}
+
+.leaves{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.leaves .set{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.leaves .set div{
+    position: absolute;
+    display: block;
+}
+
+.leaves .set div:nth-child(1){
+    left: 35%;
+    animation: animate 20s linear infinite;
+}
+
+.leaves .set div:nth-child(2){
+    left: 50%;
+    animation: animate 14s linear infinite;
+}
+.leaves .set div:nth-child(3){
+    left: 70%;
+    animation: animate 12s linear infinite;
+}
+.leaves .set div:nth-child(4){
+    left: 15%;
+    animation: animate 15s linear infinite;
+}
+.leaves .set div:nth-child(5){
+    left: 85%;
+    animation: animate 18s linear infinite;
+}
+.leaves .set div:nth-child(6){
+    left: 90%;
+    animation: animate 12s linear infinite;
+}
+.leaves .set div:nth-child(7){
+    left: 5%;
+    animation: animate 14s linear infinite;
+}
+.leaves .set div:nth-child(8){
+    left: 60%;
+    animation: animate 15s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        opacity: 0;
+        top: -10%;
+        transform: translateX(20px) rotate(0deg);
+    }
+    10%{
+        opacity: 1;
+    }
+    20%{
+        transform: translateX(-20px) rotate(45deg);
+    }
+    40%{
+        transform: translateX(-20px) rotate(90deg);
+    }
+    60%{
+        transform: translateX(20px) rotate(180deg);
+    }
+    80%{
+        transform: translateX(-20px) rotate(45deg);
+    }
+    100%{
+        top: 110%;
+        transform: translateX(20px) rotate(225deg);
+    }
+
+}

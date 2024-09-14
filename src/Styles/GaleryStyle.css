@@ -1,0 +1,42 @@
+.container-galery{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+    padding: 100px;
+}
+.photo-ofi{
+    width: 50%;
+    height: 550px;
+    background: rgba(117, 117, 117, 0.404);
+    padding: 10px;
+    border-radius: 25px;
+}
+.photo-ofi img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+.photos-container{
+    width: 40%;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    gap: 15px;
+}
+.photos-container img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+.photos-container .photo{
+    width: 200px;
+    height: 100px;
+}
